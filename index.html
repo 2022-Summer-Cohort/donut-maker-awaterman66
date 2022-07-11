@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="header">
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Information</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <div class="dropdown-heading">Fred the Baker Baking Company™</div>
+            <div class="dropdown-links">
+              <br>
+              Fred the Baker Baking Company was 
+              <br>
+              established in 1650 by Fred the Baker.
+              <br>
+              <a href="/">www.fredthebaker.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Inspiration</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <div class="dropdown-heading">Cookie Clicker</div>
+            <div class="dropdown-links">
+              Cookie Clicker was the inspiration for this
+              <br>
+              project. Published by: <a href="https://store.steampowered.com/search/?publisher=Playsaurus">Playsaurus</a>
+              <br>
+              <a href="https://orteil.dashnet.org/cookieclicker/">Cookie Clicker</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" data-dropdown>
+        <button class="link" data-dropdown-button>Contact</button>
+        <div class="dropdown-menu information-grid">
+          <div>
+            <div class="dropdown-heading">Created by: Alex Waterman</div>
+            <div class="dropdown-links">
+              <a href="https://github.com/awaterman66">Github</a>
+              <a href="https://www.linkedin.com/in/alexander-waterman/">Linkedin</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main>
+      <h1>Donut Maker</h1>
+      <h2>Click the Donut</h2>
+      <img
+        id="donut-img"
+        src="/css/imgs/donut2.png"
+        alt="a picture of a donut"
+      />
+      <button class="reset">Reset</button>
+      <p>Donuts Made : <span id="donut-num"></span></p>
+    </main>
+    <div class="clicker-container">
+      <div class="auto-clicker">
+        <h3>Purchase Auto Clicker</h3>
+        <h3>Auto Clicker Price <span id="auto-clicker-price"></span></h3>
+        <button class="auto-btn">Purchase</button>
+        <h3>Amount of Auto Clickers: <span id="auto-clicker-amount"></span></h3>
+      </div>
+      <div class="click-multiplier">
+        <h3>Purchase Click Multiplier</h3>
+        <h3>Multiplier Price <span id="multiplier-price"></span></h3>
+        <button class="multiplier-btn">Purchase</button>
+        <h3>Click Multiplier: <span id="multiplier-amount"></span></h3>
+        <h3>Current multiplier: <span id="current-multiplier">0</span></h3>
+      </div>
+    </div>
+    <script src="/js/app.js" type="module"></script>
   </body>
 </html>
